@@ -1,0 +1,746 @@
+/* RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --BGCOLOR-MAIN: rgb(9, 46, 58);
+}
+
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+
+/* NAVBAR */
+
+.header{
+    position: relative;
+    background:rgb(210, 65, 65);
+    color: white;
+    width: 100%;
+    height: 80px;
+    border: none;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+nav{
+    display: flex;
+    padding: .5% 5%;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.links{
+    position: fixed;
+    background: linear-gradient(rgb(0, 0, 0), rgba(17, 0, 255, 0.637)), url(Images/barimage.avif);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 350px;
+    top: 0;
+    right: -400px;
+    z-index: 2;
+    text-align: center;
+    font-size: 2rem;
+    transition: .5s;
+}
+
+.links ul{
+    padding-top: 50px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.links ul li{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: 1s;
+}
+
+.links ul li a{
+    color: white;
+    font-size: 50px;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.links ul li:hover{
+    transform: scale(150%)
+}
+
+.fa-xmark{
+    font-size: 3.2rem;
+}
+
+.fa-bars{
+    font-size: 2.8rem;
+    margin-top: 8px;
+}
+
+button{
+    display: block;
+    margin: 10px;
+    font-size: 2.2rem;
+    border: none;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    padding-bottom: 5px;
+}
+
+.links button:hover{
+    color: white;
+    text-shadow: 0rem 0rem 2rem white;
+}
+
+/* SECTION-1 */
+
+.first{
+    background: linear-gradient(rgba(255, 0, 0, 0.553), rgba(17, 0, 255, 0.372)), url(Images/first\ img.webp);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first img{
+    border-radius: 50%;
+    height: 200px;
+    border: 5px solid var(--BGCOLOR-MAIN);
+}
+
+
+.maincard{
+    background-color: rgb(255, 255, 255);
+    height: 450px;
+    width: 800p;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 50px;
+    border-radius: 20px;
+    gap: 1rem;
+    box-shadow: 0rem 0rem 2rem black;
+}
+
+.first h1{
+    font-size: 2.5rem;
+    color: var(--BGCOLOR-MAIN);
+    text-shadow: 1px 1px 2px black;
+}
+    
+.first h2{
+    font-size: 1.7rem;
+    color: var(--BGCOLOR-MAIN);
+}
+    
+.first p{
+    font-size: 20px;
+    width: 800px;
+    text-align: center;
+    color: var(--BGCOLOR-MAIN);
+    font-weight: 600;
+}
+    
+
+
+/* SECTION-2 */
+
+.second{
+    background:var(--BGCOLOR-MAIN);
+    height: 700px;
+    color: black;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.second .exph1{
+    color: white;
+    font-size: 70px;
+}
+
+.second article{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 700px;
+    justify-content: space-around;
+}
+
+.exp{
+    background-color: white;
+    height: 250px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.second .fa-brands,
+.second .fa-solid{
+    font-size: 150px;
+}
+
+
+
+/* SECTION-3 */
+
+.third{
+    height: 1000px;
+    flex-direction: column;
+    align-items: center;
+    border: 20px soid red;
+    position: relative;
+    background: var(--BGCOLOR-MAIN);
+}
+
+.third h1{
+    font-size: 5rem;
+    color: white;
+    margin-top: 50px;
+}
+
+.details{
+    display: flex;
+    justify-content: center;
+    height: 110px;  
+    align-items: center;  
+}
+
+.details .detailsbtn{
+    font-size: 2.4rem;
+    border: 2px solid white;
+    width: 200px;
+    height: 70px;
+    background-color: transparent;
+    transition: 1s;
+    border-radius: 10px;
+    background: radial-gradient(black, transparent);
+}
+
+.details a{
+    text-decoration: none;
+}
+
+.detailsbtn:hover{
+    background-color: rgba(21, 19, 82, 0.559);
+    color: white;
+}
+
+.w3-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mySlides{
+    display: none;
+    width: 1300px;
+    height: 700px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.third .w3-button{
+    z-index: 3;
+    color: white;
+    position: relative;
+    width: 90px;
+    height: 700px;
+    text-align: center;
+    border: none;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.632), rgba(0, 0, 0, 0.317), transparent);
+    border-radius: 10px 0px 0px 10px;
+}
+
+.btnstyle{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 181px;
+    gap: 711px;
+    width: 100%;
+}
+
+.third .w3-button:last-child{
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.632), rgba(0, 0, 0, 0.317), transparent);
+    border-radius: 0px 10px 10px 0px;
+    z-index: 1;
+}
+
+
+/* SECTION-4 */
+
+.fourth{
+    height: 600px;
+    background: var(--BGCOLOR-MAIN);
+    display: flex;
+    align-items: center;   
+    display: flex;
+    flex-flow: column;
+}
+
+.fourth h1{
+    color: white;
+    font-size: 5rem;
+    margin-top: 8rem;
+}
+
+.fourth p{
+    color: white;
+    font-size: 2rem;
+}
+
+.fourth article{
+    width: 90%;
+    height: 70%;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: start;
+    margin-top: 2rem;
+}   
+
+
+
+/* SECTION-5 */
+
+.fifth{
+    height: 700px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(var(--BGCOLOR-MAIN), rgba(0, 0, 0, 0.653)),url(Images/last\ im.avif);
+    background-position: center;
+    background-size: cover;
+}
+
+.fifth div{
+    width: 700px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 700px;
+}
+
+.fifth-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.fifth-left h1{
+    font-size: 3rem;
+    color: white;
+}
+
+.fa-facebook,
+.fa-instagram,
+.fa-youtube,
+.fa-discord{
+    font-size: 5rem;
+    color: white;
+    transition: .5s;
+}
+
+.fa-facebook:hover,
+.fa-instagram:hover,
+.fa-youtube:hover,
+.fa-discord:hover{
+    transform: scale(150%);
+}
+
+
+
+
+.fifth-right h1{
+    font-size: 6rem;
+    color: white;
+}
+
+.forms{
+    display: flex;
+    flex-flow: column;
+    height: 500px;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+input{
+    height: 80px;
+    width: 500px;
+    text-align: center;
+}
+
+input[type = "text"]{
+    font-size: 30px;
+}
+
+input[type = "email"]{
+    font-size: 30px;
+}
+
+textarea{
+    height: 150px;
+}
+
+input:last-child{
+    height: 150px;
+}
+
+::placeholder{
+    color: black;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.lastbtn{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin: 1rem 0rem 4rem 0rem;
+}
+
+.lastbtn button{
+    border: 2px solid white;
+    height: 80px;
+    width: 300px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.29);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.lastbtn button:hover{
+    background-color: rgba(21, 19, 82, 0.559);
+    color: white;
+}
+
+
+
+
+@media(max-width: 700px){
+
+    .header{
+        background-color: var(--BGCOLOR-MAIN);
+    }
+
+    .fa-bars{
+        font-size: 2.5rem;
+        margin-top: 8px;
+    }
+
+    .links ul{
+        padding-top: 0;
+    }
+
+    .links ul li a{
+        font-size: 2rem;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 800;
+    }
+
+    .links{
+        width: 200px;
+        right: -200px;
+        top: 0;
+        position: fixed;
+        z-index: 2;
+        background: linear-gradient(rgb(0, 0, 0), rgba(17, 0, 255, 0.637)), url(Images/barimage.avif);
+        background-position: -120px 0px;
+        background-size: cover;
+    }
+     
+    .first{
+        background: linear-gradient(rgba(82, 64, 148, 0.685), rgba(0, 0, 0, 0.372)), url(Images/first\ img.webp);
+        background-position: center;
+        background-size: cover;
+        height: 602px;
+        width: 100%;
+        display: flex;
+        align-items: start;
+    }
+
+    .maincard{
+        width: 100vw;
+        border-radius: 0px;
+        margin-top: 50px;
+        height: 500px;
+
+    }
+
+    .first p{  
+        width: 100vw;
+        font-size: 20px;
+        padding: 0px 20px;
+    }
+
+    
+    button:active{
+        text-shadow: none;
+    }
+
+
+    /* SECTION-2 */
+
+    .second{
+        height: 820px;
+        display: flex;
+        align-items: center;
+    }
+
+    .second article{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        height: 700px;
+        justify-content: space-around;
+    }
+    
+    .second .exp h1{
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .exp{
+        background-color: white;
+        height: 210px;
+        width: 190px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+    }
+    
+    .second .fa-brands,
+    .second .fa-solid{
+        font-size: 75px;
+    }
+    
+    
+
+    /* SECTION-3 */
+
+
+    .third{
+        height: 700px;
+    }
+
+    .third h1{
+        font-size: 4.7rem;
+        margin-top: 0rem;
+    }
+
+    .third .mySlides{
+        height: 350px;
+        width: 410px;
+        border-radius: 0px 0px 0px 0px;
+    }
+
+    .third .w3-button{
+        z-index: 3;
+        color: white;
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        border: none;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.632), rgba(0, 0, 0, 0.317), transparent);
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    .btnstyle{
+        position: absolute;
+        display: flex;
+        align-items: end;
+        gap: 9rem;
+        width: 100%;
+        height: 500px;
+    }
+
+    .third .w3-button:last-child{
+        background: linear-gradient(to left, rgba(0, 0, 0, 0.632), rgba(0, 0, 0, 0.317), transparent);
+        border-radius: 0px 10px 10px 0px;
+    }
+
+
+    .details .detailsbtn{
+        font-size: 2rem;
+        border: none;
+        width: 150px;
+        height: 90px;
+        background-color: transparent;
+        transition: 1s;
+        border-radius: 0px;
+        font-weight: 800;
+        border: 1px solid white;
+        border-radius: 10px;
+    }
+
+    .details{
+        display: flex;
+        height: 192px;
+        align-items: end;
+    }
+
+    .detailsbtn:active{
+        background-color: rgba(21, 19, 82, 0.559);
+        color: white;
+    }
+
+
+    /* SECTION-4 */
+
+    .fourth{
+        height: 600px;
+    }
+
+    .fourth h1{
+        font-size: 4.7rem;
+        margin-top: 0rem;
+    }
+
+    .fourth p{
+        font-size: 20px;
+    }
+
+    .fourth article{
+        gap: 1rem;
+    }
+
+
+    /* SECTION-5 */
+
+    .fifth{
+        width: 100%;
+        height: 1000px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 5rem;
+        background: linear-gradient(var(--BGCOLOR-MAIN), rgba(0, 0, 0, 0.406)),url(Images/last\ im.avif);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .fifth div{
+        width: 400px;
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        height: 250px;
+
+    }
+
+    .fa-facebook,
+    .fa-instagram,
+    .fa-youtube,
+    .fa-discord{
+        font-size: 4rem;
+        color: white;
+    }
+    
+    .fifth h1{
+        font-size: 3rem;
+        text-align: center;
+        width: 400px;
+    }
+    
+    .fifth-left{
+        display: flex;
+        flex-direction: row;
+    } 
+  
+    .fifth-right h1{
+        font-size: 4rem;
+    }
+
+    .fifth div:last-child{
+        height: 550px;
+        align-items: start;
+        justify-content: center;   
+    }
+    
+    .fifth .forms{
+        align-items: center;
+        width: 100%;
+        height: 400px;
+    } 
+    
+    input{
+        width: 370px;
+    }
+
+    input[type = "text"]{
+        font-size: 25px;
+    }
+    
+    input[type = "email"]{
+        font-size: 25px;
+    }
+    
+    input[type = "message"]{
+        font-size: 25px;
+    }
+    
+    input:last-child{
+        height: 190px;
+    }
+    
+    ::placeholder{
+        color: black;
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+    
+    .lastbtn{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin: 1rem 0rem 4rem 0rem;
+    }
+    
+    .lastbtn button{
+        border: 2px solid white;
+        height: 80px;
+        width: 300px;
+        border-radius: 5px;
+    }
+    
+    .lastbtn button:active{
+        background-color: rgba(9, 9, 9, 0.758);
+        color: white;
+    }
+
+}
+

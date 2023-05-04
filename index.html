@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7eb1f2e87a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- SECTION-HEADER -->
+
+    <section class="header">
+        <nav>
+            <h1>logo</h1>
+            <div class="links" id="links">
+                <button onclick="closeMenu()"><i class="fa-solid fa-xmark"></i></button>
+                <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">Section-3</a></li>
+                    <li><a href="">Section-4</a></li>
+                </ul>
+            </div>
+            <button class="but1" onclick="openMenu()"><i class="fa-solid fa-bars"></i></button>
+        </nav>
+
+    <script>
+
+            var links = document.getElementById("links");
+
+         function openMenu(){
+                links.style.right = "0";
+         }
+        
+         function closeMenu(){
+                links.style.right = "-400px";
+         }
+
+    </script>
+</section>
+
+
+<!-- SECTION-1 -->
+
+<section class="first">
+    <!-- <article class="first__article">
+    <div class="cards">
+        <i class="fa-solid fa-location-dot"></i>
+        <h2>Gurung Street, <br> Mid Baneshwor, Kathmandu</h2>
+    </div>
+    <div class="cards">
+        <i class="fa-solid fa-phone"></i>
+        <h2>9848619720 <br> Sunday-Friday 8AM to 8PM</h2>
+    </div>
+    <div class="cards">
+        <i class="fa-solid fa-envelope"></i>
+        <h2>sushantpoudel900 <br> sushantpoudel999</h2>
+    </div>
+</article> -->
+
+<div class="maincard">
+    <img src="Images/3.jpg" alt="">
+    <h1>HELLO</h1>
+    <h2>A Bit About Me</h2>
+    <p>I'm a web developer based on Kathmandu, who loves to design simple & unique websites.</p>
+</div>
+</section>
+
+<!-- SECTION-2 -->
+
+<section class="second">
+    <h1 class="exph1">EXPERTISE</h1>
+<article>
+    <div class="exp">
+        <i class="fa-brands fa-html5"></i>
+        <h1>HTML</h1>
+    </div>
+    <div class="exp">
+        <i class="fa-brands fa-css3-alt"></i>
+        <h1>CSS</h1>
+    </div>
+    <div class="exp">
+        <i class="fa-brands fa-react"></i>
+        <h1>React</h1>
+    </div>
+    <div class="exp">
+        <i class="fa-brands fa-js"></i>
+        <h1>JavaScript</h1>
+    </div>
+    <div class="exp">
+        <i class="fa-brands fa-node"></i>
+        <h1>Node</h1>
+    </div>
+    <div class="exp">
+        <i class="fa-solid fa-c"></i>
+        <h1>C Programming</h1>
+    </div>
+</article>
+</section>
+
+<!-- SECTION-3 -->
+
+<section class="third">
+    
+    <div class="w3-content">
+      <h1>PROJECTS</h1>
+      <div class="slides">
+        <img class="mySlides" src="Images/Page-1.png">
+        <img class="mySlides" src="Images/Page-2.png">
+        <img class="mySlides" src="Images/page-3.png">
+                
+      </div>
+      <div class="btnstyle">
+      <button class="w3-button leftbt" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button rightbt" onclick="plusDivs(1)">&#10095;</button>
+    
+    </div>
+    </div>
+    <div class="details">
+    <a href="#" target="_self"><button class="detailsbtn">Details</button></a> 
+</div>
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+      
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+      
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        x[slideIndex-1].style.display = "block";  
+      }
+      </script>
+
+      
+</section>
+
+<!-- SECTION-4 -->
+
+<section class="fourth">
+    <h1>ABOUT ME</h1>
+    <article>
+    <p>Studied school and college at Everest E. B. S. and completed with 3.57 and 3.36 GPA</p>
+    <p>Studying Bachelor in Information Management in Thames Int College</p>
+    <p>Heavily interested in coding and creating websites.</p>
+    <p>Learnt 3d design in Blender for 2 years</p>
+    <p>Interested in singing and playing video games for fun</p>
+</article>
+</section>
+
+<!-- SECTION-5 -->
+
+<section class="fifth">
+    <div class="fifth-left">
+        <h1>You Can Find Me On</h1>
+        <a href=""><i class="fa-brands fa-facebook"></i></a> 
+       <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-youtube"></i></a>
+        <a href=""><i class="fa-brands fa-discord"></i></a>
+    </div>
+    <div class="fifth-right">
+        <h1>Contact Me</h1>
+        <form class="forms">
+            <input type="text" placeholder="Enter Your Name">
+            <input type="email" placeholder="Enter Your email">
+            <input type="message" placeholder="Message Here">
+            
+        </form>
+        <article class="lastbtn">
+        <button>Send</button>
+        <button>Reset</button>
+        </article>
+    </div>
+</section>
+
+
+</body>
+</html>
