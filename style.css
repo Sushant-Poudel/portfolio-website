@@ -25,12 +25,13 @@ body{
 /* NAVBAR */
 
 .header{
-    position: relative;
-    background:rgb(210, 65, 65);
+    position: absolute;
+    background:rgba(210, 65, 65, 0);
     color: white;
     width: 100%;
     height: 80px;
     border: none;
+    z-index: 1;
 }
 
 h1{
@@ -78,7 +79,7 @@ nav{
 
 .links ul li a{
     color: white;
-    font-size: 50px;
+    font-size: 45px;
     text-decoration: none;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -115,10 +116,11 @@ button{
 /* SECTION-1 */
 
 .first{
-    background: linear-gradient(rgba(255, 0, 0, 0.553), rgba(17, 0, 255, 0.372)), url(Images/first\ img.webp);
+    position: relative;
+    background: linear-gradient(rgba(255, 0, 0, 0.664), rgba(17, 0, 255, 0.413)), url(Images/first\ img.webp);
     width: 100%;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     height: 600px;
     display: flex;
     justify-content: center;
@@ -134,8 +136,8 @@ button{
 
 .maincard{
     background-color: rgb(255, 255, 255);
-    height: 450px;
-    width: 800p;
+    height: 460px;
+    width: 900px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -179,7 +181,7 @@ button{
 
 .second .exph1{
     color: white;
-    font-size: 70px;
+    font-size: 60px;
 }
 
 .second article{
@@ -187,13 +189,14 @@ button{
     flex-wrap: wrap;
     align-items: center;
     height: 700px;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 3rem;
 }
 
 .exp{
     background-color: white;
     height: 250px;
-    width: 500px;
+    width: 430px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -203,7 +206,7 @@ button{
 
 .second .fa-brands,
 .second .fa-solid{
-    font-size: 150px;
+    font-size: 130px;
 }
 
 
@@ -220,7 +223,7 @@ button{
 }
 
 .third h1{
-    font-size: 5rem;
+    font-size: 4rem;
     color: white;
     margin-top: 50px;
 }
@@ -228,19 +231,19 @@ button{
 .details{
     display: flex;
     justify-content: center;
-    height: 110px;  
+    height: 220px;
     align-items: center;  
 }
 
 .details .detailsbtn{
-    font-size: 2.4rem;
+    font-size: 2.3rem;
     border: 2px solid white;
-    width: 200px;
-    height: 70px;
+    width: 300px;
+    height: 90px;
     background-color: transparent;
     transition: 1s;
     border-radius: 10px;
-    background: radial-gradient(black, transparent);
+    background: rgba(7, 6, 6, 0.237);
 }
 
 .details a{
@@ -259,6 +262,7 @@ button{
 }
 
 .mySlides{
+    position: relative;
     display: none;
     width: 1300px;
     height: 700px;
@@ -269,7 +273,6 @@ button{
 .third .w3-button{
     z-index: 3;
     color: white;
-    position: relative;
     width: 90px;
     height: 700px;
     text-align: center;
@@ -282,8 +285,8 @@ button{
     display: flex;
     justify-content: space-around;
     position: absolute;
-    top: 181px;
-    gap: 711px;
+    top: 156px;
+    gap: 884px;
     width: 100%;
 }
 
@@ -307,13 +310,13 @@ button{
 
 .fourth h1{
     color: white;
-    font-size: 5rem;
+    font-size: 4em;
     margin-top: 8rem;
 }
 
 .fourth p{
     color: white;
-    font-size: 2rem;
+    font-size: 1.9rem;
 }
 
 .fourth article{
@@ -350,13 +353,15 @@ button{
 }
 
 .fifth-right{
+    padding-top: 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    gap: 0rem;
 }
 
 .fifth-left h1{
-    font-size: 3rem;
+    font-size: 2.8rem;
     color: white;
 }
 
@@ -364,7 +369,7 @@ button{
 .fa-instagram,
 .fa-youtube,
 .fa-discord{
-    font-size: 5rem;
+    font-size: 4rem;
     color: white;
     transition: .5s;
 }
@@ -378,9 +383,8 @@ button{
 
 
 
-
 .fifth-right h1{
-    font-size: 6rem;
+    font-size: 4rem;
     color: white;
 }
 
