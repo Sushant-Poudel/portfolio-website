@@ -391,8 +391,9 @@ button{
 .forms{
     display: flex;
     flex-flow: column;
+    align-items: center;
     height: 500px;
-    gap: 2rem;
+    gap: 1rem;
     margin-top: 1rem;
 }
 
@@ -410,13 +411,29 @@ input[type = "email"]{
     font-size: 30px;
 }
 
+input[type = "message"]{
+    font-size: 200px;
+    height: 150px;
+    font-family: 'Poppins', sans-serif;
+}
+
 textarea{
     height: 150px;
+    width: 500px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+textarea::placeholder{
+    transform: translate(160px, 30px);
 }
 
 input:last-child{
     height: 150px;
 }
+
 
 ::placeholder{
     color: black;

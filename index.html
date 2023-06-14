@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sushant Poudel</title>
+    <title>Sushant Poudel</title> 
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/7eb1f2e87a.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
@@ -93,8 +93,8 @@
         <h1>JavaScript</h1>
     </div>
     <div class="exp">
-        <i class="fa-brands fa-node"></i>
-        <h1>Node</h1>
+        <i class="fa-brands fa-java"></i>
+        <h1>Java</h1>
     </div>
     <div class="exp">
         <i class="fa-solid fa-c"></i>
@@ -168,26 +168,26 @@
 <section class="fifth">
     <div class="fifth-left">
         <h1>You Can Find Me On</h1>
-        <a href=""><i class="fa-brands fa-facebook"></i></a> 
-       <a href=""><i class="fa-brands fa-instagram"></i></a>
-        <a href=""><i class="fa-brands fa-youtube"></i></a>
-        <a href=""><i class="fa-brands fa-discord"></i></a>
+        <a target="_blank" href="https://www.facebook.com/sushant.poudel.798"><i class="fa-brands fa-facebook"></i></a> 
+       <a target="_blank" href="https://www.instagram.com/sushant_poudel_/"><i class="fa-brands fa-instagram"></i></a>
+        <a target="_blank" href="https://www.youtube.com/channel/UCcAsPxzDQrLrvsQ5J3IxoMQ"><i class="fa-brands fa-youtube"></i></a>
+        <a target="_blank" href="https://discord.com/channels/@me"><i class="fa-brands fa-discord"></i></a>
     </div>
     <div class="fifth-right">
         <h1>Contact Me</h1>
-        <form class="forms">
-            <input type="text" placeholder="Enter Your Name">
-            <input type="email" placeholder="Enter Your email">
-            <input type="message" placeholder="Message Here">
-            
-        </form>
+        <form action="https://formsubmit.co/sushantpoudel900@gmail.com" method="POST" class="forms">
+            <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+            <input id="email" type="email" name="email" placeholder="Enter Your email" required>
+            <textarea type="message" name="Message" placeholder="Message Here" required rows="10" ></textarea>
+    
         <article class="lastbtn">
-        <button>Send</button>
-        <button>Reset</button>
+        <button type="submit">Send</button>
+        <button onclick="reset()">Reset</button>
         </article>
+    </form>
     </div>
-</section>
 
+</section>
 
 </body>
 </html>
